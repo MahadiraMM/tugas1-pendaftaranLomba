@@ -1,0 +1,184 @@
+/* Variabel Warna */
+:root {
+    --primary-blue: #1C7ED6; /* Aksen Biru Cerah */
+    --primary-dark: #1F2937; /* Teks Gelap Utama */
+    --text-medium: #4B5563; /* Label & Teks Sekunder */
+    --bg-light: #F9FAFB; /* Latar Belakang Formulir */
+    --bg-outside: #E5E7EB; /* Latar Belakang Halaman (Abu-abu) */
+    --border-color: #D1D5DB; /* Garis Input */
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('bg.png');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 10PX 10px 10px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.organizer {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-medium);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    line-height: 1.3;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: var(--text-medium);
+    margin-top: 5px;
+}
+/* end header */
+
+/* formulir */
+.form-section {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed var(--border-color); /* Garis pemisah antar bagian */
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primary-blue);
+    display: inline-block;
+}
+/* end formulir */
+
+/* input */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-medium);
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--primary-dark);
+    background-color: var(--bg-light);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(28, 126, 214, 0.15);
+    outline: none;
+    background-color: white;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.file-info {
+    font-size: 12px;
+    color: var(--text-medium);
+    margin-top: 4px;
+}
+/* end input */
+
+/* tombol */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-grow: 1;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1565C0;
+}
+
+.btn-secondary {
+    background-color: var(--border-color);
+    color: var(--text-medium);
+}
+
+.btn-secondary:hover {
+    background-color: #B0B5BB;
+}
+/* end tombol */
